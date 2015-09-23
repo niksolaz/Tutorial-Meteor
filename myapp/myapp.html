@@ -5,7 +5,10 @@
 <body>
   <div class="container">
     <header>
-      <h1>Todo List of MyApp</h1>
+      <h1>Todo Your List</h1>
+      <p>Enter your comment in the text "Type to add new tasks" and build your own list.</p>
+      <p>by <a href="https://github.com/niksolaz">Nik Solaz</a></p>
+
 
       <form class="new-task">
         <input type="text" name="text" placeholder="Type to add new tasks" />
@@ -18,11 +21,19 @@
       {{/each}}
     </ul>
   </div>
+  <div class="container">
+	  <footer>
+	      <h1>Contact Me</h1>
+	      <p>Find me on solazzo.nicola@gmail.com</p>
+	      <p>Find me on <a href="https://twitter.com/AppNiksolaz">Twitter</a></p>
+	      <p>by <a href="https://github.com/niksolaz">Nik Solaz</a></p>
+	  </footer>
+  </div>
 </body>
 
 <template name="task">
   <li class="{{#if checked}}checked{{/if}}">
-  	<button class="delete">&times;</button>
+  	<button class="delete">[ delete &times;]</button>
 
   	<input type="checked" checked="{{checked}}" class="toggle-checked" />
 
